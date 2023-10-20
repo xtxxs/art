@@ -1,0 +1,99 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: smooch sans;
+}
+
+#logosquare {
+  width:650px;
+  margin: 5% auto;
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+  box-sizing:border-box;
+}
+
+#logo-one img, #logo-two img, #logo-three img {
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+#logo-one img, #logo-two img { 
+  height:100%;
+}
+
+#logo-three img {
+  max-height: 150px;
+}
+
+#logotext { grid-area: 1 / 1 / 2 / 4; }
+#logo-one { grid-area: 2 / 1 / 4 / 2; }
+#logo-two { grid-area: 2 / 2 / 4 / 4; }
+#logo-three { grid-area: 4 / 1 / 5 / 4; }
+#logosub { grid-area: 5 / 1 / 6 / 4; }
+#logoaccent { grid-area: 6 / 1 / 7 / 4; }
+
+#logotext {
+    display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+.logo {
+  font: 900 188px smooch sans;
+  letter-spacing:5px;
+  line-height:70%;
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo:before {
+  content: '';
+  flex: 1;
+  height:10px;
+  background: #fff;
+}
+
+.prelogo {
+  font: 400 24px smooch sans;
+  letter-spacing: 2px;
+  line-height:0%;
+}
+
+#logosub {
+  font: 700 39px smooch sans;
+  letter-spacing: 3px;
+  text-transform:uppercase;
+  justify-content: space-between;
+  display: flex;
+}
+
+#logoaccent {
+  font: 400 24px smooch sans;
+  letter-spacing: 2px;
+  text-align:right;
+  width:100%;
+  margin-top: -20px;
+}
+.sp-dd {
+  float: right;
+  position: relative;
+  top: -34px;
+  padding: 5px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: -1px 5px 0px 0px;
+  font: 10px Roboto;
+  background: #0e0e0e;
+  line-height: 1.5;
+  color: #fffafa;
+  border: #ece8e8 1px solid;
+  display: block;
+}
+a.sp-cred {
+  color: #fffefe;
+  text-decoration: none;
+}
